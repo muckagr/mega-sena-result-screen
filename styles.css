@@ -1,0 +1,116 @@
+body {
+    background-color: black;
+    width: 700px;
+    font-family: monospace;
+    color: white;
+    margin: auto;
+    margin-top: 120px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+#container #concurso-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+}
+
+#concurso-data .modalidade {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#concurso-data .concurso {
+    color: rgb(49, 206, 227);
+    font-size: 1.7rem;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+#container #numeros-sorteados {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+    font-weight: bold;
+}
+
+#container #numeros-sorteados p{
+    color: black;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(225,225,232,1) 35%, rgba(184,187,187,1) 100%);
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    font-size: 3rem;
+    border-radius: 50%;
+    width: 55px;    
+    height: 55px;
+    border: 3px solid rgb(217, 124, 17);
+}
+
+#container #resultado {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(255, 187, 1);
+    font-weight: bold;
+}
+
+#container #tabela-acertos {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border: 2px solid rgb(217, 124, 17);
+    border-radius: 10px;
+    width: 70%;
+}
+
+#container #tabela-acertos #cabecalho {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 90%;
+    color: rgb(255, 234, 1);
+}
+
+#container #tabela-acertos #cabecalho p {
+    width: 33.3%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#container #tabela-acertos #resultado-detalhado {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+#container #tabela-acertos #resultados #resultado-detalhado {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#container #tabela-acertos #resultados #resultado-detalhado:not(:last-child) {
+    border-bottom: 1px rgb(251, 251, 251, .5) solid;
+}
+
+#container #tabela-acertos #resultados #resultado-detalhado p {
+    margin: auto;
+    width: 33%;
+    text-align: center;
+}
